@@ -1,0 +1,67 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="header">
+      <div class="logo">
+        <img
+          src="http://placehold.it/100x100"
+          class="float-left rounded-circle p-2"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h3 style="text-align: center; margin-top: 30px;">FITNESS TRACKER</h3>
+  </div>
+</div>
+<hr />
+
+<nav class="navbar navbar-light bg-warning navbar-expand-lg bg-light">
+  <button
+    type="button"
+    class="navbar-toggler"
+    data-toggle="collapse"
+    data-target="#myNavbar"
+  >
+    X
+  </button>
+  <div id="myNavbar" class="collapse navbar-collapse">
+    <ul class="navbar-nav d-flex">
+      <li class="nav-item col-sm-4">
+        <button class="nav-item nav-link btn btn-block btn-danger" (click)="landingpage()">
+          Home
+        </button>
+      </li>
+      <li class="nav-item col-sm-4">
+        <button
+          class="nav-item nav-link btn btn-block btn-danger"
+          (click)="placeAppointment()"
+        >
+          Place Appointment
+        </button>
+      </li>
+      <li class="nav-item col-sm-4">
+        <button
+          class="nav-item nav-link btn btn-block btn-danger"
+          (click)="viewAppointment()"
+        >
+          View Appointment
+        </button>
+      </li>
+      <li class="nav-item col-sm-4">
+        <button
+          class="nav-item nav-link btn btn-block btn-danger"
+          (click)="contactUspage()"
+        >
+          Contact Us
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="sidebar">
+  <button (click)="landingpage()">Home</button><br />
+  <button (click)="placeAppointment()">Place Appointment</button><br />
+  <button (click)="viewAppointment()">View Appointment</button><br />
+  <button (click)="contactUspage()">Contact Us</button>
+</div>
+<router-outlet></router-outlet>
